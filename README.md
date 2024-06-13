@@ -1,5 +1,7 @@
 # stream-to-string
-Template repo for my Typescript projects
+
+Convert a stream to a string
+
 [![GitHub license](https://img.shields.io/github/license/jeswr/stream-to-string.svg)](https://github.com/jeswr/stream-to-string/blob/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/@jeswr/stream-to-string.svg)](https://www.npmjs.com/package/@jeswr/stream-to-string)
 [![build](https://img.shields.io/github/actions/workflow/status/jeswr/stream-to-string/nodejs.yml?branch=main)](https://github.com/jeswr/stream-to-string/tree/main/)
@@ -7,9 +9,14 @@ Template repo for my Typescript projects
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 ## Usage
-When this repository is used as a template, you will need to do the following:
- - Provide secrets tokens fo NPM (`NPM_TOKEN`)
-   NPM tokens (`NPM_TOKEN`) should be automation tokens generated at https://www.npmjs.com/settings/[user]/tokens/
+
+```ts
+import { Readable } from 'readable-stream';
+import stringify from '@jeswr/stream-to-string';
+
+// 'abc'
+await stringify(Readable.from(['a', 'b', 'c']));
+```
 
 ## License
 ©2024–present
