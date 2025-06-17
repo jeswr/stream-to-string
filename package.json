@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/jeswr/stream-to-string/README.md",
   "devDependencies": {
-    "@types/jest": "^29.5.12",
+    "@types/jest": "^30.0.0",
     "@types/readable-stream": "^4.0.14",
     "@typescript-eslint/eslint-plugin": "^7.13.0",
     "@typescript-eslint/parser": "^7.13.0",
